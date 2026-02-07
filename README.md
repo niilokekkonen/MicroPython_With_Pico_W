@@ -1,5 +1,5 @@
 # MicroPython_With_Pico_W
-Programs to read an analog to digital converted signal from a Raspberry Pi Pico W. 
+Program to read an ADC signal with a Raspberry Pi Pico W. 
 
 Current programs: 
 Read_pot is a program reading potentiometers signals and blinking the LED in sync to the value.
