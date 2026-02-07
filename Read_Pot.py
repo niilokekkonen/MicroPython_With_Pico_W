@@ -8,22 +8,23 @@ led = Pin("LED", Pin.OUT)
 pot = ADC(Pin(27))
 
 #Converting the 16bit ADC reading (0-65535) into a voltage (0V-3.3V)
-#conversion_factor = 3.3 / 65535
+conversion_factor = 3.3 / 65535
 
 while True:
-    #Reading the ADC from pin 27(ADC-1)
-    #ADC = pot.read_u16() * conversion_factor
-    heart_rate = pot.read_u16()
-    #Defining maximum ADC value.
-    #ADC_MAX = 3.3
     
-    #delay = ADC/ADC_MAX
+    #Reading the ADC from pin 27(ADC-1)
+    ADC = pot.read_u16() * conversion_factor
+    
+    #Defining maximum ADC value.
+    ADC_MAX = 3.3
+    
+    #Delay between 0-1 second
+    delay = ADC/ADC_MAX
     print(ADC)
-    print(heart_rate)
     
     #LED functionality
     led.on()
-    t.sleep(1)
+    t.sleep(delay)
     led.off()
-    t.sleep(1)
+    t.sleep(delay)
         
