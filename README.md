@@ -2,7 +2,9 @@
 Programs to read an analog to digital converted signal from a Raspberry Pi Pico W. 
 
 Current programs: 
-Read_pot is a program reading potentiometers signals and blinking the LED in sync to the value.
+- Read_pot is a program reading potentiometers signals and blinking the LED in sync to the value.
+
+- Control_ufo is a program that prints an string ufo (<=>, and let's you control it with buttons. 
 
 # Hardware requirements:
 * Raspberry Pi Pico W
@@ -12,8 +14,8 @@ Read_pot is a program reading potentiometers signals and blinking the LED in syn
 * Potentiometer
 
 # How it's used:
-* - Load Read_Pot.py.
-* - make sure you have downloaded Thonny. If not you can get it from Thonny.org
+* - Download the program.
+* - make sure you have downloaded Thonny. If not you can get it from Thonny.org (Or you can use VSCode as well...)
 * - Connect the circuit to ADC-1, if you connect it to another ADC-pin just change the pin number in the ADC function.
 * - Make sure you have connected the Pico W to Thonny and have the right intrepeter
 * - Then just hit run and it should be reading the signal coming your potentiometer
