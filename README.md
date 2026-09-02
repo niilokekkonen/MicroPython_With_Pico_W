@@ -1,5 +1,5 @@
 # MicroPython_With_Pico_W
-Program to read an ADC signal with a Raspberry Pi Pico W. 
+A Program to read an ADC signal with a Raspberry Pi Pico W, and a program to create an UFO on a oled display, and move it.
 
 Current programs: 
 - Read_pot is a program reading potentiometers signals and blinking the LED in sync to the value.
